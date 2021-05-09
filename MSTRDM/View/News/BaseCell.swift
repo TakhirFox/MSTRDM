@@ -9,6 +9,8 @@ import UIKit
 
 class BaseCell: UICollectionViewCell {
 
+    // MARK: - Properies
+    
     override var isHighlighted: Bool {
         didSet {
             var transform: CGAffineTransform = .identity
@@ -23,10 +25,12 @@ class BaseCell: UICollectionViewCell {
         }
     }
     
+    // MARK: - Initializers
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // create shadows for background
+        // Create shadows for background
         self.backgroundView = UIView()
         addSubview(self.backgroundView!)
         self.backgroundView?.fillSuperview(padding: .init(top: 0, left: 16, bottom: 0, right: 16))

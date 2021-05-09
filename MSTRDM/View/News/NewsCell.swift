@@ -9,11 +9,18 @@ import UIKit
 
 class NewsCell: BaseCell {
     
-    let blackView = UIView()
+    // MARK: - Private Properties
+    
+    private let blackView = UIView()
+    
+    // MARK: - Public Properties
+    
     var imageView = UIImageView(cornerRadius: 16)
     var titleLabel = UILabel(text: "textlabel", font: .boldSystemFont(ofSize: 22), numberOfLines: 3, textColor: .white)
     let desctiptionLabel = UILabel(text: "descriptionlabel", font: .systemFont(ofSize: 14), numberOfLines: 3, textColor: .white)
     let dateLabel = UILabel(text: "date", font: .systemFont(ofSize: 12), textColor: .white)
+    
+    // MARK: - Initializers
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +38,8 @@ class NewsCell: BaseCell {
         setupUI()
 
     }
+    
+    // MARK: - Private Methods
     
     private func setupUI() {
         blackView.backgroundColor = .black

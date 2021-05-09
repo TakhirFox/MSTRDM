@@ -9,13 +9,16 @@ import UIKit
 
 class NewsLoadingCell: UICollectionReusableView {
     
+    // MARK: - Initializers
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupUI()
-        
-        
+  
     }
+    
+    // MARK: - Private Methods
     
     private func setupUI() {
         let activityIndicatior = UIActivityIndicatorView(style: .medium)
